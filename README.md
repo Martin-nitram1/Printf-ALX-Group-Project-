@@ -26,10 +26,10 @@ To use the _printf function, include the "main.h" header file in your C source c
 ```#include "main.h"```
 
 Call the _printf function with the desired format and arguments:
-```_printf("Hello, %s!\n", "World");```
-```_printf("The answer is %d\n", 42);```
-```_printf("Binary representation of 10: %b\n", 10);```
-```_printf("Reverse of 'hello': %r\n", "hello");```
+```_printf("Hello, %s!\n", "World");
+_printf("The answer is %d\n", 42);
+_printf("Binary representation of 10: %b\n", 10);
+_printf("Reverse of 'hello': %r\n", "hello");```
 
 ##Return Value
 
