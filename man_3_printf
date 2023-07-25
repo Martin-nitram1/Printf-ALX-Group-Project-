@@ -13,11 +13,14 @@ int _printf(const char *format, ...);
 
 DESCRIPTION
 
-The _printf function is a custom implementation of the printf function in C. It allows formatted output to be printed to the standard output stream (stdout). The function supports various format specifiers for printing different data types.
+The _printf function is a custom implementation of the printf function in C. 
+It allows formatted output to be printed to the standard output stream (stdout). 
+The function supports various format specifiers for printing different data types.
 
 RETURN VALUE
 
-Upon successful execution, _printf returns the total number of characters printed (excluding the null byte used to end output to strings). If an error occurs, the function returns -1.
+Upon successful execution, _printf returns the total number of characters printed 
+(excluding the null byte used to end output to strings). If an error occurs, the function returns -1.
 
 FORMAT SPECIFIERS
 
@@ -36,8 +39,10 @@ The _printf function supports the following format specifiers:
 %R: Prints a string in ROT13 encryption.
 ARGUMENTS
 
-format: A character string containing the format specifiers and regular text to be printed. This is the first argument passed to the function.
-...: Optional arguments that depend on the format specifiers used in the format string. These are the additional arguments to be printed, corresponding to the format specifiers.
+format: A character string containing the format specifiers and regular text to be printed. 
+This is the first argument passed to the function.
+...: Optional arguments that depend on the format specifiers used in the format string. 
+These are the additional arguments to be printed, corresponding to the format specifiers.
 EXAMPLES
 
 - Printing a string:
