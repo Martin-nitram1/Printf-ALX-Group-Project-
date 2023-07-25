@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_npc - Non printable characters
+ * print_bigS - Non printable characters
  * (0 < ASCII value < 32 or >= 127) are
  * printed this way: \x, followed by the ASCII code
  * value in hexadecimal (upper case - always 2 characters)
@@ -10,7 +10,7 @@
  * if a flag is passed to _printf
  * Return: number of char printed
  */
-int print_npc(va_list l, flags_t *f)
+int print_bigS(va_list l, flags_t *f)
 {
 	int i, count = 0;
 	char *res;
