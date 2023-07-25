@@ -75,9 +75,8 @@ This custom _printf function is open-source software released under the MIT Lice
 
 ## Acknowledgments
 
-The _printf function was developed as part of ALX SE _Printf Group Project, inspired by the original printf function in the C standard library. Special thanks to Martin Omondi & Justus Gugwa for the development and contributions to this project.
+The _printf function was developed as part of ALX SE _Printf Group Project, by Martin Omondi and Justus Gugwa, inspired by the original printf function in the C standard library.  ALX SE fraternity for their support and contributions to this project.
 
 ## Contact Information
 
 For questions or inquiries, please contact info.martinomondi@gmail.com.
-
