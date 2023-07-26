@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_int - prints an integer
+ * print_int -  this prints an integer
  * @l: va_list of args from _printf
  * @f: pointer to the struct flags determining
  * if a flag is passed
