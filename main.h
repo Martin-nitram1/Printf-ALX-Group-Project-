@@ -20,7 +20,7 @@ typedef struct flag
 
 /**
  * struct phandler - struct to choose the right function
- * depending on format passed
+ * as per the format passed 
  * @c: format 
  * @f: pointer to aligned printing function
  */
