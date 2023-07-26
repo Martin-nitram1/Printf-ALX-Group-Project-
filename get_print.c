@@ -2,7 +2,7 @@
 
 /**
  * get_print - selects the right printing function
- * based on conversion specifier 
+ * based on conversion specifier passed
  * @s: conversion specifier
  *
  * Return: a pointer to the matching printing function
