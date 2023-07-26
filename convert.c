@@ -4,7 +4,7 @@
  * convert - converts number and base into string
  * @num: number
  * @base: base
- * @lowercase: determines if values need to be lowercase
+ * @lowercase: determines if values need to be lowercase or not
  * Return: result string
  */
 char *convert(unsigned long int num, int base, int lowercase)
