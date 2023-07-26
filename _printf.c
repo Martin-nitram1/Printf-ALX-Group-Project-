@@ -32,14 +32,14 @@ int _printf(const char *format, ...)
 				count += _putchar('%');
 				continue;
 			}
-			if (*p == '\0') // Check for missing conversion specifier
+			if (*p == '\0') 
 				return (-1);
 
 			while (get_flag(*p, &flags))
 				p++;
 
 			pfunc = get_print(*p);
-			if (!pfunc) // Handle invalid conversion specifier
+			if (!pfunc) 
 				return (-1);
 
 			count += pfunc(args, &flags);
