@@ -78,7 +78,7 @@ printf(3), puts(3), write(2)
 
 AUTHORS
 
-This custom _printf function was developed by Martin Omondi and Justus Gugwa.
+This custom _printf function has been developed by Martin Omondi and Justus Gugwa.
 
 REPORTING BUGS
 
