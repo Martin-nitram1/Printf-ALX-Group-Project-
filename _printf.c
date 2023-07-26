@@ -3,7 +3,7 @@
 #include <limits.h>
 
 /**
- * _printf - produces output according to format
+ * _printf - produces output according to format specified
  * @format: string containing the characters and the specifiers
  *
  * Return: length of the formatted output string
