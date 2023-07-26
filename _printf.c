@@ -18,10 +18,10 @@ int _printf(const char *format, ...)
 	register int count = 0;
 
 	va_start(args, format);
-	if (!format || (format[0] == '%' && !format[1]))
+
+	if (format == NULL)
 		return (-1);
-	if (format[0] == '%' && format[1] == ' ' && !format[2])
-		return (-1);
+
 	for (p = format; *p; p++)
 	{
 		if (*p == '%')
@@ -32,17 +32,22 @@ int _printf(const char *format, ...)
 				count += _putchar('%');
 				continue;
 			}
+			if (*p == '\0') // Check for missing conversion specifier
+				return (-1);
+
 			while (get_flag(*p, &flags))
 				p++;
+
 			pfunc = get_print(*p);
-			count += (pfunc)
-				? pfunc(args, &flags)
-				: _printf("%%%c", *p);
-		} else
+			if (!pfunc) // Handle invalid conversion specifier
+				return (-1);
+
+			count += pfunc(args, &flags);
+		}
+		else
 			count += _putchar(*p);
 	}
-	_putchar(-1);
+
 	va_end(args);
 	return (count);
-
 }
