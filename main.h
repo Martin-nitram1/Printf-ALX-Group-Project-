@@ -19,8 +19,8 @@ typedef struct flag
 } flags_t;
 
 /**
- * struct phandler - struct to choose the right function depending
- * on format pass
+ * struct phandler - struct to choose the right function
+ * depending on format passed
  * @c: format 
  * @f: pointer to aligned printing function
  */
