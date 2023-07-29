@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * print_npc - Non printable characters
+ * print_bigS - Non printable characters
  * (0 < ASCII value < 32 or >= 127) are
  * printed this way: \x, followed by the ASCII code
  * value in hexadecimal (upper case - always 2 characters)
  * @l: va_list arguments from _printf
- * @f: pointer to the struct flags  determines
+ * @f: pointer to the struct flags that determines
  * if a flag is passed to _printf
  * Return: number of char printed
  */
-int print_npc(va_list l, flags_t *f)
+int print_bigS(va_list l, flags_t *f)
 {
 	int i, count = 0;
 	char *res;
@@ -41,8 +41,7 @@ int print_npc(va_list l, flags_t *f)
  * print_rev - prints a string in reverse
  * @l: argument from _printf
  * @f: pointer to the struct flags that determines
- * flag
- *
+ * if a flag is passed to _printf
  * Return: length of the printed string
  */
 int print_rev(va_list l, flags_t *f)
