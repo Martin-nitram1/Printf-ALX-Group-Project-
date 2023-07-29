@@ -42,7 +42,7 @@ int print_hex_big(va_list l, flags_t *f);
 int print_binary(va_list l, flags_t *f);
 int print_octal(va_list l, flags_t *f);
 
-/* converter */
+/* convert */
 char *convert(unsigned long int num, int base, int lowercase);
 
 /* _printf */
