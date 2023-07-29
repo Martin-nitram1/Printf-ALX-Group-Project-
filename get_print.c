@@ -21,7 +21,7 @@ int (*get_print(char s))(va_list, flags_t *)
 		{'o', print_octal},
 		{'R', print_rot13},
 		{'r', print_rev},
-		{'S', print_npc},
+		{'S', print_bigS},
 		{'p', print_address},
 		{'%', print_percent}
 		};
@@ -32,5 +32,4 @@ int (*get_print(char s))(va_list, flags_t *)
 	for (i = 0; i < flags; i++)
 		if (func_arr[i].c == s)
 			return (func_arr[i].f);
-	return (NULL);
-}
+	return (NULL);}
