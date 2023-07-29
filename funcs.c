@@ -3,10 +3,9 @@
 
 /**
  * _putchar - writes the character c to stdout
- * @c: The character to print
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- * Description: _putchar uses a local buffer of 1024 to call write
+ * @c: character to print
+ * Return: 1 onn success.
+ * -1 on error, and errno is set appropriately.
  * as little as possible
  */
 int _putchar(char c)
